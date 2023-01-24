@@ -1,0 +1,42 @@
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23px 0;
+  margin: 0;
+  box-shadow: 6px -1px 13px -3px rgba(0, 0, 0, 0.77);
+
+  h3 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.55);
+  }
+
+  button {
+    margin-left: 28px;
+    background: white;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+}
+
+.topbar {
+  height: 8vh;
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.navigation_group {
+  display: flex;
+}

@@ -1,7 +1,5 @@
 <div class="topbar">
-    <%# Hard coded 'admin' which is where the user role will be shown %>
   <h1><span style='color: #7286D3;'>Logged in as: </span>Admin</h1>
-
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
 
@@ -15,18 +13,20 @@
             <li class="nav-item active">
               <%= link_to "Dashboard", "#", class: "nav-link" %>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <%= link_to "Tickets", "#", class: "nav-link" %>
             </li>
+
+  <%# services with dropdown %>
+
             <li class="nav-item dropdown">
+              <%= image_tag "https://i.ytimg.com/an/GmwLK4jg2Oo/0cea1729-db53-4544-83e8-8ccacc3313b3_mq.jpg?v=5cc9a537", class: "avatar-bordered dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "Action", "#", class: "dropdown-item" %>
-                <%= link_to "Another action", "#", class: "dropdown-item" %>
+                <%= link_to "Create Listing", "#", class: "dropdown-item" %>
                 <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
               </div>
             </li>
           <% else %>
-            <li class="nav-item">
               <%= link_to "Login", new_user_session_path, class: "nav-link" %>
             </li>
           <% end %>

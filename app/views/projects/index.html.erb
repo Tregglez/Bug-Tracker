@@ -1,0 +1,18 @@
+  <div class="sidebar">
+    <h1 class='logo'>Bug</h1>
+    <div class="line"></div>
+
+    <%# Button will be a link to that will add a new project currently a palceholder %>
+    <div class="projects">
+      <h3>Projects<button><%= link_to '+', new_project_path %></button></h3>
+
+      <%# This area will will display all projects %>
+      <% @projects.each do |project| %>
+        <%= link_to project_path(project) do %>
+          <p style="margin-bottom: 3px;"><%= project.name %></p>
+        <% end %>
+      <% end %>
+
+      <div class="line"></div>
+    </div>
+  </div>

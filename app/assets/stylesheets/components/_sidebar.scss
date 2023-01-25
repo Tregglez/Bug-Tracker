@@ -1,5 +1,5 @@
 .sidebar {
-  height: 100vh;
+  height: calc(100vh - 8vh);
   width: 200px;
   background: #fff;
   display: flex;
@@ -7,7 +7,8 @@
   align-items: center;
   padding: 23px 0;
   margin: 0;
-  box-shadow: 6px -1px 13px -3px rgba(0, 0, 0, 0.77);
+  box-shadow: 3px 0px 2px -3px rgba(0, 0, 0, 0.77);
+  text-align: center;
 
   h3 {
     font-size: 1.5rem;

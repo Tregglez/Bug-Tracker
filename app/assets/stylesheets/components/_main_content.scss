@@ -1,8 +1,33 @@
 .main_content {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 70vw;
+  position: absolute;
+  height: 578px;
+  bottom: 56px;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  border: 2px solid #799D6C;
+  border-radius: 8px;
+  background: #BDCEB6;
+}
+
+.title_bar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  top: -52px;
+  border: 2px solid #0A3AD6;
+  width: 685px;
+  height: 100px;
+  z-index: 2;
+  background: #446DF6;
+  border-radius: 8px;
+  padding: 0 5px;
+
+  h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.9rem;
+  }
 }

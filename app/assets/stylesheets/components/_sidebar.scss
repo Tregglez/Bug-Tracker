@@ -1,7 +1,8 @@
 .sidebar {
   height: calc(100vh - 8vh);
   width: 200px;
-  background: #fff;
+  background: #ECE8DD;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,6 @@
 
   button {
     margin-left: 28px;
-    background: white;
     border: none;
     font-size: 1.8rem;
     font-weight: bold;
@@ -22,7 +22,8 @@
 .topbar {
   height: 8vh;
   width: 100vw;
-  background: #fff;
+  background: #ECE8DD;
+  border: 1px solid red;
   display: flex;
   padding: 0 20px;
   justify-content: space-around;

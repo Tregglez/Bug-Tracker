@@ -3,6 +3,7 @@
 }
 
 .center_box {
+  background: #ECE8DD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,5 +12,5 @@
   margin: 0;
   width: calc(100vw - 200px);
   text-align: center;
-  border: 2px solid red;
+
 }
